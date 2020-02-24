@@ -4,6 +4,9 @@
   </a>
 </p>
 
+#
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/015f668b-41a3-434c-8344-1926ecf8a361/deploy-status)](https://app.netlify.com/sites/xenodochial-tereshkova-e852ec/deploys)
 
 # See:
 
