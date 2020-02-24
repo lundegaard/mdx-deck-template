@@ -1,9 +1,8 @@
 <p align="center">
-  <a href="https://zoe.lundegaard.ai">
-    <img alt="Zoe.ai logo" src="https://zoe.lundegaard.ai/images/zoe-ai.svg" width="120" />
+  <a href="https://lundegaard.eu">
+    <img alt="by Lundegaard" src="by-Lundegaard.png" width="120" />
   </a>
 </p>
-
 
 
 # See:
