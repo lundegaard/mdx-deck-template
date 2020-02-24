@@ -38,7 +38,7 @@ cd mdx-deck-template
 yarn install
 ```
 
-## Developping
+## Developing
 
 ```shell
 yarn start
