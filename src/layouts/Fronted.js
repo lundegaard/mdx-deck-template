@@ -1,6 +1,8 @@
+/** @jsx jsx */
+import { jsx } from 'theme-ui';
 import React from 'react';
 import styled from '@emotion/styled';
-import { Small, Subtitle, MetaList } from '../components';
+import { Small, MetaList } from '../components';
 
 export const Striped = styled.div`
 		width: 100vw;
@@ -16,7 +18,7 @@ export const Striped = styled.div`
 			  rgba(0,0,0,0) 1px,
 			  rgba(0,0,0,0) 0),
 			${p => p.theme[p.color]};
-		background-size:80px auto;
+		background-size: 180px auto;
 
 		& h1 {
 			margin: 0;
@@ -52,17 +54,27 @@ export const Lundegaard = () => (
 /* eslint-enable max-len */
 
 const Fronted = ({ children, ...rest }) => {
-	const [title, subtitle, meta, footer] = React.Children.toArray(children);
+	const [
+		title,
+		subtitle,
+		meta,
+		footer,
+		...restChildren
+	] = React.Children.toArray(children);
 
 	return (
 		<Striped {...rest}>
 			{title}
-			<Subtitle>{subtitle.props.children}</Subtitle>
+			<h2 sx={{ variant: 'styles.subtitle.secondary', pb: 3, mb: 4 }}>
+				{subtitle.props.children}
+			</h2>
 			<MetaList>{meta.props.children}</MetaList>
 			<p>
 				<Small as="span">{footer.props.children}</Small>
 			</p>
 			<Lundegaard />
+
+			{restChildren}
 		</Striped>
 	);
 };

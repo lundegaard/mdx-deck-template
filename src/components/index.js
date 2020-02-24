@@ -3,19 +3,6 @@ import styled from '@emotion/styled';
 import { position, top, right, bottom, left, zIndex } from 'styled-system';
 import { Text } from 'theme-ui';
 
-/* eslint-disable react/prop-types */
-
-export const Subtitle = styled.h2`
-	padding-bottom: 16px;
-	margin-bottom: 32px;
-
-	&:after {
-		background: ${ps => ps.theme[ps.color]}!important;
-	}
-`;
-
-Subtitle.defaultProps = { color: 'green' };
-
 export const Small = props => (
 	<Text sx={{ variant: 'styles.Small' }} {...props} />
 );

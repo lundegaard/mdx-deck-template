@@ -1,6 +1,7 @@
 import { themes } from 'mdx-deck';
 import chroma from 'chroma-js';
 import { vsDark } from '@code-surfer/themes';
+import { mergeDeepRight } from 'ramda';
 
 const { dark } = themes;
 
@@ -10,12 +11,12 @@ const blue = '#1372fa';
 const red = '#eb5856';
 const white = '#ffffff';
 
-const subtitle = {
+const subtitleBase = {
 	fontSize: '1.8rem',
+	fontWeight: 'heading',
 	textTransform: 'uppercase',
 	position: 'relative',
-	fontFamily: 'Circular Pro, system-ui, sans-serif',
-	fontWeight: '400',
+	variant: 'text.heading',
 
 	'&:after': {
 		position: 'absolute',
@@ -24,9 +25,20 @@ const subtitle = {
 		transform: 'translate(-50%, 0)',
 		height: '5px',
 		width: '50px',
-		background: '#009fe3',
 		content: '""',
 	},
+};
+const subtitle = {
+	...mergeDeepRight(subtitleBase, {
+		'&:after': {
+			background: '#009fe3',
+		},
+	}),
+	secondary: mergeDeepRight(subtitleBase, {
+		'&:after': {
+			background: green,
+		},
+	}),
 };
 
 export const theme = {
@@ -61,6 +73,7 @@ export const theme = {
 			textTransform: 'uppercase',
 		},
 		h2: subtitle,
+		subtitle,
 		// used by code-surfer
 		h4: subtitle,
 		a: {
@@ -98,7 +111,7 @@ export const theme = {
 			  rgba(0,0,0,0) 1px,
 			  rgba(0,0,0,0) 0),
 			${darkGray}`,
-			backgroundSize: '80px auto',
+			backgroundSize: '180px auto',
 			fontWeight: '300',
 		},
 		CodeSurfer: {
