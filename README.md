@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="https://github.com/jxnblk/mdx-deck">MDX Deck</a> Template
+  ♠️ <a href="https://github.com/jxnblk/mdx-deck">MDX Deck</a> Template
 </h1>
 
 <p align="center">
@@ -8,20 +8,29 @@
   </a>
 </p>
 
-[![GitHub][github-badge]][github]
-![MIT License][license]
-[![Netlify Status](https://api.netlify.com/api/v1/badges/015f668b-41a3-434c-8344-1926ecf8a361/deploy-status)](https://app.netlify.com/sites/xenodochial-tereshkova-e852ec/deploys)
+<p align="center">
+  <a href="https://github.com/lundegaard/mdx-deck-template">
+    <img src="https://flat.badgen.net/badge/-/github?icon=github&label" alt="Github" />
+  </a>
+   <img src="https://flat.badgen.net/badge/license/MIT/blue" alt="MIT License" />
+   <a href="https://app.netlify.com/sites/xenodochial-tereshkova-e852ec/deploys">
+    <img src="https://api.netlify.com/api/v1/badges/015f668b-41a3-434c-8344-1926ecf8a361/deploy-status" alt="Netlify Status" />
+  </a>
+</p>
 
-[github]: https://github.com/lundegaard/mdx-deck-template
-[github-badge]: https://flat.badgen.net/badge/-/github?icon=github&label
-[license]: https://flat.badgen.net/badge/license/MIT/blue
+<h3 align="center">
+  ♠️ ❤️ ♣️ ♦️
+</h3>
 
-# See:
+<h3 align="center">
+  For quick setup of beautiful web presentations
+</h3>
 
-- [mdx-deck](https://github.com/jxnblk/mdx-deck)
-- [code-surfer](https://github.com/pomber/code-surfer)
+<p align="center">
+We prepared <strong>theme</strong> that uses clean design of <a href="https://www.lundegaard.eu">Lundegaard</a> company for awesome MDX deck. In addition we created set of <strong>layouts</strong> that will make creation of lists and code samples slides peace of cake 🎂🎂🎂.
+</p>
 
-## Installing
+# Getting started
 
 ```shell
 git clone https://github.com/lundegaard/mdx-deck-template
@@ -40,3 +49,7 @@ yarn start
 ```shell
 yarn build
 ```
+
+# Related
+- [mdx-deck](https://github.com/jxnblk/mdx-deck)
+- [code-surfer](https://github.com/pomber/code-surfer)
