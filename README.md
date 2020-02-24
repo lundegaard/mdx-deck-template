@@ -1,4 +1,6 @@
-# [MDX-deck](https://github.com/jxnblk/mdx-deck) Template
+<h1 align="center">
+  ♠️ <a href="https://github.com/jxnblk/mdx-deck">MDX Deck</a> Template
+</h1>
 
 <p align="center">
   <a href="https://lundegaard.eu">
@@ -6,21 +8,29 @@
   </a>
 </p>
 
-#
+<p align="center">
+  <a href="https://github.com/lundegaard/mdx-deck-template">
+    <img src="https://flat.badgen.net/badge/-/github?icon=github&label" alt="Github" />
+  </a>
+   <img src="https://flat.badgen.net/badge/license/MIT/blue" alt="MIT License" />
+   <a href="https://app.netlify.com/sites/xenodochial-tereshkova-e852ec/deploys">
+    <img src="https://api.netlify.com/api/v1/badges/015f668b-41a3-434c-8344-1926ecf8a361/deploy-status" alt="Netlify Status" />
+  </a>
+</p>
 
-[![GitHub][github-badge]][github]
-![MIT License][license]
-[![Netlify Status](https://api.netlify.com/api/v1/badges/015f668b-41a3-434c-8344-1926ecf8a361/deploy-status)](https://app.netlify.com/sites/xenodochial-tereshkova-e852ec/deploys)
+<h3 align="center">
+  ♠️ ❤️ ♣️ ♦️
+</h3>
 
-[github]: https://github.com/lundegaard/mdx-deck-template
-[license]: https://flat.badgen.net/badge/license/MIT/blue
+<h3 align="center">
+  For quick setup of beautiful web presentations
+</h3>
 
-# See:
+<p align="center">
+We prepared <strong>theme</strong> for awesome MDX deck that uses clean design of <a href="https://www.lundegaard.eu">Lundegaard</a> company. In addition we created set of <strong>layouts</strong> that will make creation of lists and code samples slides peace of cake 🎂🎂🎂.
+</p>
 
-- [mdx-deck](https://github.com/jxnblk/mdx-deck)
-- [code-surfer](https://github.com/pomber/code-surfer)
-
-## Installing
+# Getting started
 
 ```shell
 git clone https://github.com/lundegaard/mdx-deck-template
@@ -28,7 +38,7 @@ cd mdx-deck-template
 yarn install
 ```
 
-## Developping
+## Developing
 
 ```shell
 yarn start
@@ -39,3 +49,7 @@ yarn start
 ```shell
 yarn build
 ```
+
+# Related
+- [mdx-deck](https://github.com/jxnblk/mdx-deck)
+- [code-surfer](https://github.com/pomber/code-surfer)
