@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://lundegaard.eu">
-    <img alt="by Lundegaard" src="by-Lundegaard.png" width="120" />
+    <img alt="by Lundegaard" src="by-lundegard-logo.svg" width="120" />
   </a>
 </p>
 
