@@ -27,7 +27,7 @@
 </h3>
 
 <p align="center">
-We prepared <strong>theme</strong> that uses clean design of <a href="https://www.lundegaard.eu">Lundegaard</a> company for awesome MDX deck. In addition we created set of <strong>layouts</strong> that will make creation of lists and code samples slides peace of cake 🎂🎂🎂.
+We prepared <strong>theme</strong> for awesome MDX deck that uses clean design of <a href="https://www.lundegaard.eu">Lundegaard</a> company. In addition we created set of <strong>layouts</strong> that will make creation of lists and code samples slides peace of cake 🎂🎂🎂.
 </p>
 
 # Getting started
