@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import styled from '@emotion/styled';
 import { position, top, right, bottom, left, zIndex } from 'styled-system';
-// import chroma from 'chroma-js';
+import { Text } from 'theme-ui';
 
 /* eslint-disable react/prop-types */
 
@@ -16,38 +16,24 @@ export const Subtitle = styled.h2`
 
 Subtitle.defaultProps = { color: 'green' };
 
-export const Li = styled.li``;
-export const Ul = styled.ul`
-	${ps =>
-		ps.dense
-			? `
-					li {
-						font-size: 1em;
-						margin-bottom: 0.4em;
-					}
-			  `
-			: ''}
-`;
-export const Text = styled.span`
-	font-size: 0.7em;
-`;
+export const Small = props => (
+	<Text sx={{ variant: 'styles.Small' }} {...props} />
+);
 
 const MetaListSeparator = styled.span`
 	padding: 0 8px;
 `;
 
-export const MetaList = ({ children, ...rest }) => {
-	return (
-		<section {...rest}>
-			{React.Children.map(children, (x, i) => (
-				<Fragment>
-					{i !== 0 ? <MetaListSeparator>{'·'}</MetaListSeparator> : null}
-					{x.props.children}
-				</Fragment>
-			))}
-		</section>
-	);
-};
+export const MetaList = ({ children, ...rest }) => (
+	<section {...rest}>
+		{React.Children.map(children, (x, i) => (
+			<Fragment>
+				{i !== 0 ? <MetaListSeparator>{'·'}</MetaListSeparator> : null}
+				{x.props.children}
+			</Fragment>
+		))}
+	</section>
+);
 
 export const Position = styled.div`
 	${position}

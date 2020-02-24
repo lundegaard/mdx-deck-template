@@ -1,13 +1,15 @@
-import { CodeSurferLayout } from 'code-surfer';
+import { CodeSurfer } from 'code-surfer';
 import { Head, Appear, Notes, Image } from 'mdx-deck';
 import { Listed, Broke, Fronted, BackgroundImaged } from './layouts';
 import { codeSurferTitle, Ul, Li, MetaList } from './components';
-import './init';
+import jam from './images/jam.jpg';
 
-export { theme } from './themes/lundegaard';
+import { theme as lundegaard } from './themes/lundegaard';
+
+export const theme = lundegaard;
 
 <Head>
-	<title>Front slide</title>
+	<title>mdx-deck Lundegaard template</title>
 </Head>
 
 <Fronted>
@@ -35,7 +37,7 @@ Lundegaard 2020
 
 ---
 
-<Listed dense>
+<Listed>
 
 ## List
 
@@ -94,7 +96,7 @@ Lundegaard 2020
 
 ---
 
-<BackgroundImaged src="images/jam.jpg">
+<BackgroundImaged src={jam}>
 
 # Image breaker
 
@@ -114,7 +116,7 @@ Lundegaard 2020
 
 ---
 
-<CodeSurferLayout>
+<CodeSurfer>
 
 ```jsx title="Code block with highliting"
 import { Union } from 'react-union';
@@ -122,7 +124,7 @@ import { Union } from 'react-union';
 <Union routes={routes} />;
 ```
 
-</CodeSurferLayout>
+</CodeSurfer>
 
 ---
 

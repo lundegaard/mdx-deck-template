@@ -1,7 +1,8 @@
-import React from 'react';
+/** @jsx jsx */
+import { jsx } from 'theme-ui';
+import { Children, cloneElement } from 'react';
 import styled from '@emotion/styled';
 import { Appear } from 'mdx-deck';
-import { Li, Ul } from '../components';
 
 const ListedBase = styled.div([], {
 	width: '100vw',
@@ -17,24 +18,32 @@ const ListedBase = styled.div([], {
 	},
 });
 
-const Listed = ({ children, dense, ...rest }) => {
-	const [title, list, ...restChildren] = React.Children.toArray(children);
+// sx={{ variant: 'styles.ul.dense' }}
+const Listed = ({ children, dense: propDense, ...rest }) => {
+	const [title, list, ...restChildren] = Children.toArray(children);
+
+	const dense = propDense || Children.count(list.props.children) > 3;
+
+	const newListChildren = <Appear>{list.props.children}</Appear>;
+	const newList = cloneElement(list, {
+		children: newListChildren,
+	});
 
 	return (
 		<ListedBase {...rest}>
 			{title}
-			<Ul dense={dense || React.Children.count(list.props.children) > 3}>
-				<Appear>
-					{React.Children.map(list.props.children, (x, i) =>
-						React.createElement(Li, { key: i }, x.props.children)
-					)}
-				</Appear>
-			</Ul>
+			<div
+				sx={{
+					li: {
+						variant: dense ? 'styles.li.dense' : '',
+					},
+				}}
+			>
+				{newList}
+			</div>
 			{restChildren}
 		</ListedBase>
 	);
 };
-
-Listed.defaultProps = {};
 
 export default Listed;

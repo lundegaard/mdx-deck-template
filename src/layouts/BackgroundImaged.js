@@ -1,5 +1,4 @@
 import React, { Children, cloneElement } from 'react';
-import PropTypes from 'prop-types';
 import { Image } from 'mdx-deck';
 import styled from '@emotion/styled';
 import { ImageText } from '../components';
@@ -36,9 +35,5 @@ const BackgroundImaged = ({ children, ...rest }) => (
 		})}
 	</ImageStyled>
 );
-
-BackgroundImaged.propTypes = { children: PropTypes.node };
-
-BackgroundImaged.defaultProps = {};
 
 export default BackgroundImaged;

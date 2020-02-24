@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { Head } from 'mdx-deck';
-import { Subtitle, MetaList, Text } from '../components';
+import { Small, Subtitle, MetaList } from '../components';
 
 export const Striped = styled.div`
 		width: 100vw;
@@ -61,7 +60,7 @@ const Fronted = ({ children, ...rest }) => {
 			<Subtitle>{subtitle.props.children}</Subtitle>
 			<MetaList>{meta.props.children}</MetaList>
 			<p>
-				<Text size="sm">{footer.props.children}</Text>
+				<Small as="span">{footer.props.children}</Small>
 			</p>
 			<Lundegaard />
 		</Striped>

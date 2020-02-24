@@ -1,6 +1,8 @@
-import { dark } from 'mdx-deck/themes';
-import vsDark from 'prism-react-renderer/themes/vsDark';
+import { themes } from 'mdx-deck';
 import chroma from 'chroma-js';
+import { vsDark } from '@code-surfer/themes';
+
+const { dark } = themes;
 
 const darkGray = '#3d4549';
 const green = '#29c775';
@@ -34,19 +36,12 @@ export const theme = {
 	red,
 	white,
 	darkGray,
-	font: 'Roboto, system-ui, sans-serif',
-	monospace: 'Roboto Mono, Menlo, monospace',
-	weights: ['300', '300', '300'],
-	Slide: {
-		background: `linear-gradient(
-			  90deg,
-			  rgba(255,255,255,0.05) 1px,
-			  rgba(0,0,0,0) 1px,
-			  rgba(0,0,0,0) 0),
-			${darkGray}`,
-		backgroundSize: '80px auto',
-		fontWeight: '300',
+	fontFamilies: {
+		body: 'Roboto, system-ui, sans-serif',
+		heading: 'Circular Pro, system-ui, sans-serif',
+		monospace: 'Roboto Mono, Menlo, monospace',
 	},
+	fontWeights: { body: '300', heading: '400' },
 	colors: {
 		text: '#fff',
 		background: darkGray,
@@ -56,41 +51,67 @@ export const theme = {
 		preBackground: darkGray,
 		code: '#fff',
 	},
-	h1: {
-		textTransform: 'uppercase',
-		fontFamily: 'Circular Pro, system-ui, sans-serif',
-		fontWeight: '400',
+	text: {
+		heading: {
+			fontFamily: 'heading',
+		},
 	},
-	h2: subtitle,
-	// used by code-surfer
-	h4: subtitle,
-	a: {
-		textDecoration: 'none',
-		color: 'inherit',
-		borderBottom: `0.03em dashed ${chroma(white)
-			.alpha(0.5)
-			.hex()}`,
-
-		'&:hover': {
+	styles: {
+		h1: {
+			textTransform: 'uppercase',
+		},
+		h2: subtitle,
+		// used by code-surfer
+		h4: subtitle,
+		a: {
+			textDecoration: 'none',
 			color: 'inherit',
-			// textDecoration: 'underline',
+			borderBottom: `0.03em dashed ${chroma(white)
+				.alpha(0.5)
+				.hex()}`,
+
+			'&:hover': {
+				color: 'inherit',
+			},
 		},
-	},
-	ul: {
-		listStyle: 'none',
-		margin: '0',
-		padding: '0',
-	},
-	li: {
-		fontSize: '1.777em',
-		marginBottom: '0.7em',
-		textAlign: 'center',
-	},
-	codeSurfer: {
-		...vsDark,
-		plain: {
-			backgroundColor: darkGray,
+		ul: {
+			listStyle: 'none',
+			margin: '0',
+			padding: '0',
 		},
-		showNumbers: false,
+		li: {
+			fontSize: '1.777em',
+			marginBottom: '0.7em',
+			textAlign: 'center',
+			dense: {
+				fontSize: '1em',
+				marginBottom: '0.4em',
+			},
+		},
+		Small: {
+			fontSize: '0.777em',
+		},
+		Slide: {
+			background: `linear-gradient(
+			  90deg,
+			  rgba(255,255,255,0.05) 1px,
+			  rgba(0,0,0,0) 1px,
+			  rgba(0,0,0,0) 0),
+			${darkGray}`,
+			backgroundSize: '80px auto',
+			fontWeight: '300',
+		},
+		CodeSurfer: {
+			...vsDark.styles.CodeSurfer,
+			pre: {
+				backgroundColor: darkGray,
+			},
+			code: {
+				backgroundColor: darkGray,
+			},
+			title: {
+				backgroundColor: darkGray,
+			},
+		},
 	},
 };
