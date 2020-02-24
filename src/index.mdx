@@ -1,0 +1,133 @@
+import { CodeSurferLayout } from 'code-surfer';
+import { Head, Appear, Notes, Image } from 'mdx-deck';
+import { Listed, Broke, Fronted, BackgroundImaged } from './layouts';
+import { codeSurferTitle, Ul, Li, MetaList } from './components';
+import './init';
+
+export { theme } from './themes/lundegaard';
+
+<Head>
+	<title>Front slide</title>
+</Head>
+
+<Fronted>
+
+# Front slide
+
+## and its description
+
+- Tomáš Konrády &amp; Václav Jančařík
+- <a href="https://twitter.com/konnnyy">@konnnyy</a> / <a href="https://github.com/wafflepie">@wafflepie</a>
+
+Lundegaard 2020
+
+<br />
+
+<Notes>
+
+## Guide
+
+- Definition of problem
+
+</Notes>
+
+</Fronted>
+
+---
+
+<Listed dense>
+
+## List
+
+- Point 1
+- Point 2
+- Point 3
+
+</Listed>
+
+---
+
+<Listed dense>
+
+## Dense list
+
+- Point 1
+- Point 2
+- Point 3
+- Point 4
+- Point 5
+- Point 6
+
+</Listed>
+
+---
+
+<Broke>
+
+# Breaking slide
+
+</Broke>
+
+---
+
+<Broke color="green">
+
+# Breaking slide
+
+</Broke>
+
+---
+
+<Broke color="blue">
+
+# Breaking slide
+
+</Broke>
+
+---
+
+<Broke color="white">
+
+# Breaking slide
+
+</Broke>
+
+---
+
+<BackgroundImaged src="images/jam.jpg">
+
+# Image breaker
+
+</BackgroundImaged>
+
+---
+
+## Charts
+
+```
+.-----.       .---------.       .---------.
+|     |       |         |       |         |
+| APP | <~~~> | CMS API | <~~~> | CMS APP |
+|     |       |         |       |         |
+'-----'       '---------'       '---------'
+```
+
+---
+
+<CodeSurferLayout>
+
+```jsx title="Code block with highliting"
+import { Union } from 'react-union';
+
+<Union routes={routes} />;
+```
+
+</CodeSurferLayout>
+
+---
+
+## Code block
+
+```js
+console.log(`Hello world`);
+```
