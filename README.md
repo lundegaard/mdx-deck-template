@@ -1,3 +1,5 @@
+# [MDX-deck](https://github.com/jxnblk/mdx-deck) Template
+
 <p align="center">
   <a href="https://lundegaard.eu">
     <img alt="by Lundegaard" src="by-lundegard-logo.png" width="120" />
@@ -6,7 +8,12 @@
 
 #
 
+[![GitHub][github-badge]][github]
+![MIT License][license]
 [![Netlify Status](https://api.netlify.com/api/v1/badges/015f668b-41a3-434c-8344-1926ecf8a361/deploy-status)](https://app.netlify.com/sites/xenodochial-tereshkova-e852ec/deploys)
+
+[github]: https://github.com/lundegaard/mdx-deck-template
+[license]: https://flat.badgen.net/badge/license/MIT/blue
 
 # See:
 

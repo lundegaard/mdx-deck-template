@@ -1,5 +1,5 @@
 {
-	"name": "lundegaard-lfr-2019-talk",
+	"name": "lundegaard-mdx-deck-template",
 	"version": "1.0.0",
 	"main": "dist",
 	"private": true,
@@ -8,7 +8,7 @@
 		"Tomas Konrady <tomaskonrady@gmail.com>",
 		"Vaclav Jancarik <vaclav.janc@gmail.com>"
 	],
-	"license": "UNLISENSED",
+	"license": "MIT",
 	"dependencies": {
 		"@code-surfer/themes": "^3.1.0",
 		"@emotion/core": "^10.0.27",
